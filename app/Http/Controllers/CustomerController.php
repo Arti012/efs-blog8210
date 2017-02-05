@@ -61,7 +61,7 @@ class CustomerController extends Controller
     {
         $this->validate($request, [
     'cust_number' => 'bail|required|unique',
-    'email' => 'bail|required|unique'
+    'email' => 'bail|required|unique',
     'name' => 'required',
     'address' => 'required',
     'zip' => 'required']);
